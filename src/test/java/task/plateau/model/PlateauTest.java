@@ -13,4 +13,9 @@ public class PlateauTest {
     public void whenYTooSmallThenThrowInstantiationException() throws Exception{
         new Plateau(0,-1);
     }
+
+    @Test(expected = InstantiationException.class)
+    public void whenYTooSmallThenThrowInstantiationExceptionNANA() throws Exception{
+        new Plateau(0,-1);
+    }
 }
